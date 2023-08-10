@@ -51,6 +51,7 @@ class NoticiasController extends Controller
             'subtitulo' => $request->input('subtitulo'),
             'author' => $request->input('author'),
             'conteudo' => $request->input('conteudo'),
+            'categorias' => $request->input('categorias'),
         ]);
     
         $imagens = [];
@@ -114,6 +115,9 @@ class NoticiasController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $noticia = Noticia::find($id);
+        $noticia->delete();
+
+        return redirect()->route('noticias.mostrar')->with('success', 'Notícia excluida com sucesso.');
     }
 }

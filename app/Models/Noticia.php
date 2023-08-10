@@ -11,7 +11,7 @@ class Noticia extends Model
 
 
     protected $fillable = [
-        'titulo', 'subtitulo', 'author', 'conteudo', 'imagens'
+        'titulo', 'subtitulo', 'author', 'conteudo', 'imagens', 'categorias',
     ];
     
     protected $casts = [

@@ -40,11 +40,11 @@
         </div>
          <div class="mb-4">
             <label for="titulo" class="block text-sm font-medium text-gray-700">Categoria</label>
-            <select name="categoria" id="categoria" class="mt-1 p-2 border rounded w-full">
+            <select name="categorias" id="categorias" class="mt-1 p-2 border rounded w-full">
                 <option value="">Selecione</option>
-                <option value="1">Categoria 1</option>
-                <option value="2">Categoria 2</option>
-                <option value="3">Categoria 3</option>
+                <option value="Esporte">Esporte</option>
+                <option value="Técnologia">Técnologia</option>
+                <option value="Saúde"> Saúde </option>
             </select>
         </div>
         <div class="mb-4">

@@ -45,5 +45,8 @@ Route::middleware('auth')->group(function () {
     Route::get('noticias', [NoticiasController::class, 'index'])->name('noticias.cadastrar');
     Route::get('noticia', [NoticiasController::class, 'mostrar'])->name('noticias.mostrar');
 
+    Route::delete('noticias/{id}', [NoticiasController::class, 'destroy'])->name('noticias.destroy');
+
+
     
 });
